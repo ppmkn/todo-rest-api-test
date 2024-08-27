@@ -31,11 +31,11 @@ go run main.go
 6. Сервер запущен по адресу `http://localhost:8080` (порт по умолчанию).
 ## Конечные точки API
 Доступны следующие конечные точки:
-- `POST /tasks` : Создание новой задачи. Принимает `json` содержащий `title`, `description` и `due_date`.
-- `GET /tasks` : Список всех задач.
-- `GET /tasks/{id}` : Поиск задачи по ID. Принимает `json` содержащий `id`.
-- `PUT /tasks/{id}` : Обновление задачи по ID. Принимает `json` содержащий `title`, `description` и `due_date`.
-- `DELETE /tasks/{id}` : Удаление задачи по ID. Принимает `json` содержащий `id`.
+- `POST /tasks` : Создание новой задачи. Принимает `json` содержащий `title`, `description` и `due_date`
+- `GET /tasks` : Список всех задач
+- `GET /tasks/{id}` : Поиск задачи. Принимает `json` содержащий `id`
+- `PUT /tasks/{id}` : Обновление задачи. Принимает `json` содержащий `title`, `description` и `due_date`
+- `DELETE /tasks/{id}` : Удаление задачи. Принимает `json` содержащий `id`
 ## Структура базы данных
 Таблица `tasks` имеет поля:
 - `id` - Primary Key
